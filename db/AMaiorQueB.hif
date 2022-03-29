@@ -61,26 +61,6 @@ C2:inst
 
 # end
 # entity
-soma
-# storage
-db|AMaiorQueB.(0).cnf
-db|AMaiorQueB.(0).cnf
-# case_insensitive
-# source_file
-soma.bdf
-e9f762c6c0ba8dd1dc91d50c3feae
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
 somador
 # storage
 db|AMaiorQueB.(2).cnf
@@ -121,6 +101,26 @@ somador:inst5|fullAdder:inst2
 somador:inst5|fullAdder:inst3
 somador:inst5|fullAdder:inst4
 somador:inst5|fullAdder:inst5
+}
+# macro_sequence
+
+# end
+# entity
+soma
+# storage
+db|AMaiorQueB.(0).cnf
+db|AMaiorQueB.(0).cnf
+# case_insensitive
+# source_file
+soma.bdf
+cfad34dadd89beec4ef3a74683b3d798
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
 }
 # macro_sequence
 
