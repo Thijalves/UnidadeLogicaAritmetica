@@ -1,0 +1,129 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+11
+3700
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+C2_5
+# storage
+db|AMaiorQueB.(1).cnf
+db|AMaiorQueB.(1).cnf
+# case_insensitive
+# source_file
+c2_5.bdf
+2537b496274472e4e2f8a5ccc0afb5e9
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+C2_5:inst2
+}
+# macro_sequence
+
+# end
+# entity
+C2
+# storage
+db|AMaiorQueB.(3).cnf
+db|AMaiorQueB.(3).cnf
+# case_insensitive
+# source_file
+c2.bdf
+107876520e6d877d2d3bd7f04d5df1
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+C2:inst1
+C2:inst
+}
+# macro_sequence
+
+# end
+# entity
+soma
+# storage
+db|AMaiorQueB.(0).cnf
+db|AMaiorQueB.(0).cnf
+# case_insensitive
+# source_file
+soma.bdf
+e9f762c6c0ba8dd1dc91d50c3feae
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+somador
+# storage
+db|AMaiorQueB.(2).cnf
+db|AMaiorQueB.(2).cnf
+# case_insensitive
+# source_file
+somador.bdf
+35d2fa48481da03e8a88efd6a735215f
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+somador:inst5
+}
+# macro_sequence
+
+# end
+# entity
+fullAdder
+# storage
+db|AMaiorQueB.(4).cnf
+db|AMaiorQueB.(4).cnf
+# case_insensitive
+# source_file
+fulladder.bdf
+89a8c1df9d37f27836d3eeedb369487
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+somador:inst5|fullAdder:inst
+somador:inst5|fullAdder:inst1
+somador:inst5|fullAdder:inst2
+somador:inst5|fullAdder:inst3
+somador:inst5|fullAdder:inst4
+somador:inst5|fullAdder:inst5
+}
+# macro_sequence
+
+# end
+# complete
+
