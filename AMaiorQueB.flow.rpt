@@ -1,5 +1,5 @@
 Flow report for AMaiorQueB
-Tue Mar 29 13:39:21 2022
+Tue Mar 29 14:48:40 2022
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -38,17 +38,17 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +------------------------------------+----------------------------------------------+
-; Flow Status                        ; Successful - Tue Mar 29 13:39:21 2022        ;
+; Flow Status                        ; Successful - Tue Mar 29 14:48:40 2022        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; AMaiorQueB                                   ;
-; Top-level Entity Name              ; soma                                         ;
+; Top-level Entity Name              ; subtrador                                    ;
 ; Family                             ; Cyclone II                                   ;
 ; Met timing requirements            ; Yes                                          ;
 ; Total logic elements               ; 31 / 4,608 ( < 1 % )                         ;
 ;     Total combinational functions  ; 31 / 4,608 ( < 1 % )                         ;
 ;     Dedicated logic registers      ; 0 / 4,608 ( 0 % )                            ;
 ; Total registers                    ; 0                                            ;
-; Total pins                         ; 17 / 89 ( 19 % )                             ;
+; Total pins                         ; 16 / 89 ( 18 % )                             ;
 ; Total virtual pins                 ; 0                                            ;
 ; Total memory bits                  ; 0 / 119,808 ( 0 % )                          ;
 ; Embedded Multiplier 9-bit elements ; 0 / 26 ( 0 % )                               ;
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/29/2022 13:39:15 ;
+; Start date & time ; 03/29/2022 14:48:34 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; AMaiorQueB          ;
 +-------------------+---------------------+
@@ -74,11 +74,11 @@ applicable agreement for further details.
 +------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 277302803362671.164857195508628 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 277302803362671.164857611410368 ; --            ; --          ; --             ;
 ; MISC_FILE                          ; C:/Projeto SD/AMaiorQueB.dpf    ; --            ; --          ; --             ;
-; PARTITION_COLOR                    ; 16764057                        ; --            ; soma        ; Top            ;
-; PARTITION_NETLIST_TYPE             ; SOURCE                          ; --            ; soma        ; Top            ;
-; TOP_LEVEL_ENTITY                   ; soma                            ; AMaiorQueB    ; --          ; --             ;
+; PARTITION_COLOR                    ; 16764057                        ; --            ; subtrador   ; Top            ;
+; PARTITION_NETLIST_TYPE             ; SOURCE                          ; --            ; subtrador   ; Top            ;
+; TOP_LEVEL_ENTITY                   ; subtrador                       ; AMaiorQueB    ; --          ; --             ;
 ; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                             ; --            ; --          ; eda_blast_fpga ;
 +------------------------------------+---------------------------------+---------------+-------------+----------------+
 
@@ -89,8 +89,8 @@ applicable agreement for further details.
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Analysis & Synthesis    ; 00:00:01     ; 1.0                     ; 212 MB              ; 00:00:02                           ;
-; Fitter                  ; 00:00:01     ; 1.0                     ; 220 MB              ; 00:00:02                           ;
-; Assembler               ; 00:00:01     ; 1.0                     ; 195 MB              ; 00:00:00                           ;
+; Fitter                  ; 00:00:02     ; 1.0                     ; 220 MB              ; 00:00:02                           ;
+; Assembler               ; 00:00:00     ; 1.0                     ; 195 MB              ; 00:00:00                           ;
 ; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 156 MB              ; 00:00:00                           ;
 ; Total                   ; 00:00:03     ; --                      ; --                  ; 00:00:04                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+

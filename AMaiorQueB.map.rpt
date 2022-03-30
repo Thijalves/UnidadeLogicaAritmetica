@@ -1,5 +1,5 @@
 Analysis & Synthesis report for AMaiorQueB
-Tue Mar 29 13:39:16 2022
+Tue Mar 29 14:48:35 2022
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -40,16 +40,16 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +------------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Mar 29 13:39:16 2022        ;
+; Analysis & Synthesis Status        ; Successful - Tue Mar 29 14:48:35 2022        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; AMaiorQueB                                   ;
-; Top-level Entity Name              ; soma                                         ;
+; Top-level Entity Name              ; subtrador                                    ;
 ; Family                             ; Cyclone II                                   ;
 ; Total logic elements               ; 31                                           ;
 ;     Total combinational functions  ; 31                                           ;
 ;     Dedicated logic registers      ; 0                                            ;
 ; Total registers                    ; 0                                            ;
-; Total pins                         ; 17                                           ;
+; Total pins                         ; 16                                           ;
 ; Total virtual pins                 ; 0                                            ;
 ; Total memory bits                  ; 0                                            ;
 ; Embedded Multiplier 9-bit elements ; 0                                            ;
@@ -62,7 +62,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; soma               ; AMaiorQueB         ;
+; Top-level entity name                                                      ; subtrador          ; AMaiorQueB         ;
 ; Family name                                                                ; Cyclone II         ; Stratix II         ;
 ; Use Generated Physical Constraints File                                    ; Off                ;                    ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
@@ -146,17 +146,18 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                     ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                     ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------+
-; soma.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Thiago/Desktop/Projeto SD/soma.bdf      ;
-; C2.bdf                           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Thiago/Desktop/Projeto SD/C2.bdf        ;
-; somador.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Thiago/Desktop/Projeto SD/somador.bdf   ;
-; C2_5.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Thiago/Desktop/Projeto SD/C2_5.bdf      ;
-; fullAdder.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Thiago/Desktop/Projeto SD/fullAdder.bdf ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                        ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                        ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------+
+; C2.bdf                           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Thiago/Desktop/Projeto SD/C2.bdf           ;
+; somador.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Thiago/Desktop/Projeto SD/somador.bdf      ;
+; C2_5.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Thiago/Desktop/Projeto SD/C2_5.bdf         ;
+; subtrador.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Thiago/Desktop/Projeto SD/subtrador.bdf    ;
+; C2_subtrador.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Thiago/Desktop/Projeto SD/C2_subtrador.bdf ;
+; fullAdder.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Thiago/Desktop/Projeto SD/fullAdder.bdf    ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -169,8 +170,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Total combinational functions               ; 31    ;
 ; Logic element usage by number of LUT inputs ;       ;
 ;     -- 4 input functions                    ; 21    ;
-;     -- 3 input functions                    ; 7     ;
-;     -- <=2 input functions                  ; 3     ;
+;     -- 3 input functions                    ; 6     ;
+;     -- <=2 input functions                  ; 4     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
 ;     -- normal mode                          ; 31    ;
@@ -180,30 +181,30 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;     -- Dedicated logic registers            ; 0     ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 17    ;
+; I/O pins                                    ; 16    ;
 ; Maximum fan-out node                        ; A[4]  ;
 ; Maximum fan-out                             ; 9     ;
-; Total fan-out                               ; 117   ;
-; Average fan-out                             ; 2.44  ;
+; Total fan-out                               ; 116   ;
+; Average fan-out                             ; 2.47  ;
 +---------------------------------------------+-------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                 ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------+--------------+
-; |soma                      ; 31 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 17   ; 0            ; |soma                               ; work         ;
-;    |C2:inst1|              ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |soma|C2:inst1                      ; work         ;
-;    |C2:inst|               ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |soma|C2:inst                       ; work         ;
-;    |C2_5:inst2|            ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |soma|C2_5:inst2                    ;              ;
-;    |somador:inst5|         ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |soma|somador:inst5                 ; work         ;
-;       |fullAdder:inst1|    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |soma|somador:inst5|fullAdder:inst1 ; work         ;
-;       |fullAdder:inst2|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |soma|somador:inst5|fullAdder:inst2 ; work         ;
-;       |fullAdder:inst3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |soma|somador:inst5|fullAdder:inst3 ; work         ;
-;       |fullAdder:inst4|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |soma|somador:inst5|fullAdder:inst4 ; work         ;
-;       |fullAdder:inst5|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |soma|somador:inst5|fullAdder:inst5 ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                              ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                      ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------+--------------+
+; |subtrador                 ; 31 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 16   ; 0            ; |subtrador                               ; work         ;
+;    |C2:inst|               ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |subtrador|C2:inst                       ; work         ;
+;    |C2_5:inst4|            ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |subtrador|C2_5:inst4                    ;              ;
+;    |C2_subtrador:inst1|    ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |subtrador|C2_subtrador:inst1            ; work         ;
+;    |somador:inst2|         ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |subtrador|somador:inst2                 ; work         ;
+;       |fullAdder:inst1|    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |subtrador|somador:inst2|fullAdder:inst1 ; work         ;
+;       |fullAdder:inst2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |subtrador|somador:inst2|fullAdder:inst2 ; work         ;
+;       |fullAdder:inst3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |subtrador|somador:inst2|fullAdder:inst3 ; work         ;
+;       |fullAdder:inst4|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |subtrador|somador:inst2|fullAdder:inst4 ; work         ;
+;       |fullAdder:inst5|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |subtrador|somador:inst2|fullAdder:inst5 ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -228,7 +229,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Tue Mar 29 13:39:15 2022
+    Info: Processing started: Tue Mar 29 14:48:34 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ULA -c AMaiorQueB
 Info: Found 1 design units, including 1 entities, in source file amaiorqueb.bdf
     Info: Found entity 1: AMaiorQueB
@@ -256,22 +257,21 @@ Info: Found 1 design units, including 1 entities, in source file c2_subtrador.bd
     Info: Found entity 1: C2_subtrador
 Info: Found 1 design units, including 1 entities, in source file fulladder.bdf
     Info: Found entity 1: fullAdder
-Info: Elaborating entity "soma" for the top level hierarchy
-Info: Elaborating entity "C2_5" for hierarchy "C2_5:inst2"
+Info: Elaborating entity "subtrador" for the top level hierarchy
+Info: Elaborating entity "C2_5" for hierarchy "C2_5:inst4"
 Warning: Primitive "XOR" of instance "inst14" not used
 Warning: Primitive "AND2" of instance "inst15" not used
-Info: Elaborating entity "somador" for hierarchy "somador:inst5"
-Info: Elaborating entity "fullAdder" for hierarchy "somador:inst5|fullAdder:inst"
-Info: Elaborating entity "C2" for hierarchy "C2:inst1"
-Warning: Output pins are stuck at VCC or GND
-    Warning (13410): Pin "O[6]" is stuck at GND
-Info: Implemented 48 device resources after synthesis - the final resource count might be different
+Info: Elaborating entity "somador" for hierarchy "somador:inst2"
+Info: Elaborating entity "fullAdder" for hierarchy "somador:inst2|fullAdder:inst"
+Info: Elaborating entity "C2_subtrador" for hierarchy "C2_subtrador:inst1"
+Info: Elaborating entity "C2" for hierarchy "C2:inst"
+Info: Implemented 47 device resources after synthesis - the final resource count might be different
     Info: Implemented 10 input pins
-    Info: Implemented 7 output pins
+    Info: Implemented 6 output pins
     Info: Implemented 31 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 4 warnings
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 2 warnings
     Info: Peak virtual memory: 213 megabytes
-    Info: Processing ended: Tue Mar 29 13:39:16 2022
+    Info: Processing ended: Tue Mar 29 14:48:35 2022
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:02
 

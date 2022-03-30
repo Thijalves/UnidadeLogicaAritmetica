@@ -34,7 +34,7 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-C2_5:inst2
+C2_5:inst4
 }
 # macro_sequence
 
@@ -54,7 +54,6 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-C2:inst1
 C2:inst
 }
 # macro_sequence
@@ -75,7 +74,7 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-somador:inst5
+somador:inst2
 }
 # macro_sequence
 
@@ -95,25 +94,45 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-somador:inst5|fullAdder:inst
-somador:inst5|fullAdder:inst1
-somador:inst5|fullAdder:inst2
-somador:inst5|fullAdder:inst3
-somador:inst5|fullAdder:inst4
-somador:inst5|fullAdder:inst5
+somador:inst2|fullAdder:inst
+somador:inst2|fullAdder:inst1
+somador:inst2|fullAdder:inst2
+somador:inst2|fullAdder:inst3
+somador:inst2|fullAdder:inst4
+somador:inst2|fullAdder:inst5
 }
 # macro_sequence
 
 # end
 # entity
-soma
+C2_subtrador
+# storage
+db|AMaiorQueB.(5).cnf
+db|AMaiorQueB.(5).cnf
+# case_insensitive
+# source_file
+c2_subtrador.bdf
+998f828b24835780b2d983f9bc7a39d2
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+C2_subtrador:inst1
+}
+# macro_sequence
+
+# end
+# entity
+subtrador
 # storage
 db|AMaiorQueB.(0).cnf
 db|AMaiorQueB.(0).cnf
 # case_insensitive
 # source_file
-soma.bdf
-cfad34dadd89beec4ef3a74683b3d798
+subtrador.bdf
+faec737fca1c582fda33d6528fadf066
 26
 # internal_option {
 BLOCK_DESIGN_NAMING

@@ -1,5 +1,5 @@
 Simulator report for AMaiorQueB
-Tue Mar 29 13:41:24 2022
+Tue Mar 29 14:37:58 2022
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -45,41 +45,41 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 1.0 us       ;
-; Simulation Netlist Size     ; 85 nodes     ;
-; Simulation Coverage         ;      98.82 % ;
-; Total Number of Transitions ; 17275        ;
+; Simulation Netlist Size     ; 84 nodes     ;
+; Simulation Coverage         ;       0.00 % ;
+; Total Number of Transitions ; 0            ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Cyclone II   ;
 +-----------------------------+--------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------+
-; Simulator Settings                                                                                                      ;
-+--------------------------------------------------------------------------------------------+------------+---------------+
-; Option                                                                                     ; Setting    ; Default Value ;
-+--------------------------------------------------------------------------------------------+------------+---------------+
-; Simulation mode                                                                            ; Functional ; Timing        ;
-; Start time                                                                                 ; 0 ns       ; 0 ns          ;
-; Simulation results format                                                                  ; CVWF       ;               ;
-; Vector input source                                                                        ; wave.vwf   ;               ;
-; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
-; Check outputs                                                                              ; Off        ; Off           ;
-; Report simulation coverage                                                                 ; On         ; On            ;
-; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
-; Display missing 1-value coverage report                                                    ; On         ; On            ;
-; Display missing 0-value coverage report                                                    ; On         ; On            ;
-; Detect setup and hold time violations                                                      ; Off        ; Off           ;
-; Detect glitches                                                                            ; Off        ; Off           ;
-; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
-; Generate Signal Activity File                                                              ; Off        ; Off           ;
-; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
-; Group bus channels in simulation results                                                   ; Off        ; Off           ;
-; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
-; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
-; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
-; Overwrite Waveform Inputs With Simulation Outputs                                          ; On         ;               ;
-; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
-+--------------------------------------------------------------------------------------------+------------+---------------+
++------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                           ;
++--------------------------------------------------------------------------------------------+-----------------+---------------+
+; Option                                                                                     ; Setting         ; Default Value ;
++--------------------------------------------------------------------------------------------+-----------------+---------------+
+; Simulation mode                                                                            ; Functional      ; Timing        ;
+; Start time                                                                                 ; 0 ns            ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF            ;               ;
+; Vector input source                                                                        ; funcionaSub.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On              ; On            ;
+; Check outputs                                                                              ; Off             ; Off           ;
+; Report simulation coverage                                                                 ; On              ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On              ; On            ;
+; Display missing 1-value coverage report                                                    ; On              ; On            ;
+; Display missing 0-value coverage report                                                    ; On              ; On            ;
+; Detect setup and hold time violations                                                      ; Off             ; Off           ;
+; Detect glitches                                                                            ; Off             ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off             ; Off           ;
+; Generate Signal Activity File                                                              ; Off             ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off             ; Off           ;
+; Group bus channels in simulation results                                                   ; Off             ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On              ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE      ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off             ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On              ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto            ; Auto          ;
++--------------------------------------------------------------------------------------------+-----------------+---------------+
 
 
 +----------------------+
@@ -94,127 +94,208 @@ Please use Quartus II to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;      98.82 % ;
-; Total nodes checked                                 ; 85           ;
-; Total output ports checked                          ; 85           ;
-; Total output ports with complete 1/0-value coverage ; 84           ;
-; Total output ports with no 1/0-value coverage       ; 1            ;
-; Total output ports with no 1-value coverage         ; 1            ;
-; Total output ports with no 0-value coverage         ; 1            ;
+; Total coverage as a percentage                      ;       0.00 % ;
+; Total nodes checked                                 ; 84           ;
+; Total output ports checked                          ; 84           ;
+; Total output ports with complete 1/0-value coverage ; 0            ;
+; Total output ports with no 1/0-value coverage       ; 84           ;
+; Total output ports with no 1-value coverage         ; 84           ;
+; Total output ports with no 0-value coverage         ; 84           ;
 +-----------------------------------------------------+--------------+
 
 
 The following table displays output ports that toggle between 1 and 0 during simulation.
-+----------------------------------------------------------------------------------------------------------+
-; Complete 1/0-Value Coverage                                                                              ;
-+-------------------------------------------+-------------------------------------------+------------------+
-; Node Name                                 ; Output Port Name                          ; Output Port Type ;
-+-------------------------------------------+-------------------------------------------+------------------+
-; |soma|O[5]                                ; |soma|O[5]                                ; pin_out          ;
-; |soma|O[4]                                ; |soma|O[4]                                ; pin_out          ;
-; |soma|O[3]                                ; |soma|O[3]                                ; pin_out          ;
-; |soma|O[2]                                ; |soma|O[2]                                ; pin_out          ;
-; |soma|O[1]                                ; |soma|O[1]                                ; pin_out          ;
-; |soma|O[0]                                ; |soma|O[0]                                ; pin_out          ;
-; |soma|B[4]                                ; |soma|B[4]                                ; out              ;
-; |soma|B[3]                                ; |soma|B[3]                                ; out              ;
-; |soma|B[2]                                ; |soma|B[2]                                ; out              ;
-; |soma|B[1]                                ; |soma|B[1]                                ; out              ;
-; |soma|B[0]                                ; |soma|B[0]                                ; out              ;
-; |soma|A[4]                                ; |soma|A[4]                                ; out              ;
-; |soma|A[3]                                ; |soma|A[3]                                ; out              ;
-; |soma|A[2]                                ; |soma|A[2]                                ; out              ;
-; |soma|A[1]                                ; |soma|A[1]                                ; out              ;
-; |soma|A[0]                                ; |soma|A[0]                                ; out              ;
-; |soma|C2:inst|inst4                       ; |soma|C2:inst|inst4                       ; out0             ;
-; |soma|C2:inst|inst12                      ; |soma|C2:inst|inst12                      ; out0             ;
-; |soma|C2:inst|inst6                       ; |soma|C2:inst|inst6                       ; out0             ;
-; |soma|C2:inst|inst11                      ; |soma|C2:inst|inst11                      ; out0             ;
-; |soma|C2:inst|inst5                       ; |soma|C2:inst|inst5                       ; out0             ;
-; |soma|C2:inst|inst10                      ; |soma|C2:inst|inst10                      ; out0             ;
-; |soma|C2:inst|inst1                       ; |soma|C2:inst|inst1                       ; out0             ;
-; |soma|C2:inst|inst9                       ; |soma|C2:inst|inst9                       ; out0             ;
-; |soma|C2:inst|inst                        ; |soma|C2:inst|inst                        ; out0             ;
-; |soma|C2:inst|inst7                       ; |soma|C2:inst|inst7                       ; out0             ;
-; |soma|C2:inst|inst8                       ; |soma|C2:inst|inst8                       ; out0             ;
-; |soma|C2:inst|inst3                       ; |soma|C2:inst|inst3                       ; out0             ;
-; |soma|C2:inst|inst2                       ; |soma|C2:inst|inst2                       ; out0             ;
-; |soma|C2:inst|inst14                      ; |soma|C2:inst|inst14                      ; out0             ;
-; |soma|C2:inst|inst15                      ; |soma|C2:inst|inst15                      ; out0             ;
-; |soma|C2:inst1|inst4                      ; |soma|C2:inst1|inst4                      ; out0             ;
-; |soma|C2:inst1|inst12                     ; |soma|C2:inst1|inst12                     ; out0             ;
-; |soma|C2:inst1|inst6                      ; |soma|C2:inst1|inst6                      ; out0             ;
-; |soma|C2:inst1|inst11                     ; |soma|C2:inst1|inst11                     ; out0             ;
-; |soma|C2:inst1|inst5                      ; |soma|C2:inst1|inst5                      ; out0             ;
-; |soma|C2:inst1|inst10                     ; |soma|C2:inst1|inst10                     ; out0             ;
-; |soma|C2:inst1|inst1                      ; |soma|C2:inst1|inst1                      ; out0             ;
-; |soma|C2:inst1|inst9                      ; |soma|C2:inst1|inst9                      ; out0             ;
-; |soma|C2:inst1|inst                       ; |soma|C2:inst1|inst                       ; out0             ;
-; |soma|C2:inst1|inst7                      ; |soma|C2:inst1|inst7                      ; out0             ;
-; |soma|C2:inst1|inst8                      ; |soma|C2:inst1|inst8                      ; out0             ;
-; |soma|C2:inst1|inst3                      ; |soma|C2:inst1|inst3                      ; out0             ;
-; |soma|C2:inst1|inst2                      ; |soma|C2:inst1|inst2                      ; out0             ;
-; |soma|C2:inst1|inst14                     ; |soma|C2:inst1|inst14                     ; out0             ;
-; |soma|C2:inst1|inst15                     ; |soma|C2:inst1|inst15                     ; out0             ;
-; |soma|somador:inst5|fullAdder:inst5|inst4 ; |soma|somador:inst5|fullAdder:inst5|inst4 ; out0             ;
-; |soma|somador:inst5|fullAdder:inst5|inst3 ; |soma|somador:inst5|fullAdder:inst5|inst3 ; out0             ;
-; |soma|somador:inst5|fullAdder:inst4|inst4 ; |soma|somador:inst5|fullAdder:inst4|inst4 ; out0             ;
-; |soma|somador:inst5|fullAdder:inst4|inst3 ; |soma|somador:inst5|fullAdder:inst4|inst3 ; out0             ;
-; |soma|somador:inst5|fullAdder:inst4|inst  ; |soma|somador:inst5|fullAdder:inst4|inst  ; out0             ;
-; |soma|somador:inst5|fullAdder:inst4|inst2 ; |soma|somador:inst5|fullAdder:inst4|inst2 ; out0             ;
-; |soma|somador:inst5|fullAdder:inst4|inst1 ; |soma|somador:inst5|fullAdder:inst4|inst1 ; out0             ;
-; |soma|somador:inst5|fullAdder:inst3|inst4 ; |soma|somador:inst5|fullAdder:inst3|inst4 ; out0             ;
-; |soma|somador:inst5|fullAdder:inst3|inst3 ; |soma|somador:inst5|fullAdder:inst3|inst3 ; out0             ;
-; |soma|somador:inst5|fullAdder:inst3|inst  ; |soma|somador:inst5|fullAdder:inst3|inst  ; out0             ;
-; |soma|somador:inst5|fullAdder:inst3|inst2 ; |soma|somador:inst5|fullAdder:inst3|inst2 ; out0             ;
-; |soma|somador:inst5|fullAdder:inst3|inst1 ; |soma|somador:inst5|fullAdder:inst3|inst1 ; out0             ;
-; |soma|somador:inst5|fullAdder:inst2|inst4 ; |soma|somador:inst5|fullAdder:inst2|inst4 ; out0             ;
-; |soma|somador:inst5|fullAdder:inst2|inst3 ; |soma|somador:inst5|fullAdder:inst2|inst3 ; out0             ;
-; |soma|somador:inst5|fullAdder:inst2|inst  ; |soma|somador:inst5|fullAdder:inst2|inst  ; out0             ;
-; |soma|somador:inst5|fullAdder:inst2|inst2 ; |soma|somador:inst5|fullAdder:inst2|inst2 ; out0             ;
-; |soma|somador:inst5|fullAdder:inst2|inst1 ; |soma|somador:inst5|fullAdder:inst2|inst1 ; out0             ;
-; |soma|somador:inst5|fullAdder:inst1|inst4 ; |soma|somador:inst5|fullAdder:inst1|inst4 ; out0             ;
-; |soma|somador:inst5|fullAdder:inst1|inst3 ; |soma|somador:inst5|fullAdder:inst1|inst3 ; out0             ;
-; |soma|somador:inst5|fullAdder:inst1|inst  ; |soma|somador:inst5|fullAdder:inst1|inst  ; out0             ;
-; |soma|somador:inst5|fullAdder:inst1|inst2 ; |soma|somador:inst5|fullAdder:inst1|inst2 ; out0             ;
-; |soma|somador:inst5|fullAdder:inst1|inst1 ; |soma|somador:inst5|fullAdder:inst1|inst1 ; out0             ;
-; |soma|somador:inst5|fullAdder:inst|inst3  ; |soma|somador:inst5|fullAdder:inst|inst3  ; out0             ;
-; |soma|somador:inst5|fullAdder:inst|inst1  ; |soma|somador:inst5|fullAdder:inst|inst1  ; out0             ;
-; |soma|C2_5:inst2|inst4                    ; |soma|C2_5:inst2|inst4                    ; out0             ;
-; |soma|C2_5:inst2|inst12                   ; |soma|C2_5:inst2|inst12                   ; out0             ;
-; |soma|C2_5:inst2|inst6                    ; |soma|C2_5:inst2|inst6                    ; out0             ;
-; |soma|C2_5:inst2|inst11                   ; |soma|C2_5:inst2|inst11                   ; out0             ;
-; |soma|C2_5:inst2|inst5                    ; |soma|C2_5:inst2|inst5                    ; out0             ;
-; |soma|C2_5:inst2|inst10                   ; |soma|C2_5:inst2|inst10                   ; out0             ;
-; |soma|C2_5:inst2|inst1                    ; |soma|C2_5:inst2|inst1                    ; out0             ;
-; |soma|C2_5:inst2|inst9                    ; |soma|C2_5:inst2|inst9                    ; out0             ;
-; |soma|C2_5:inst2|inst                     ; |soma|C2_5:inst2|inst                     ; out0             ;
-; |soma|C2_5:inst2|inst13                   ; |soma|C2_5:inst2|inst13                   ; out0             ;
-; |soma|C2_5:inst2|inst7                    ; |soma|C2_5:inst2|inst7                    ; out0             ;
-; |soma|C2_5:inst2|inst8                    ; |soma|C2_5:inst2|inst8                    ; out0             ;
-; |soma|C2_5:inst2|inst3                    ; |soma|C2_5:inst2|inst3                    ; out0             ;
-; |soma|C2_5:inst2|inst2                    ; |soma|C2_5:inst2|inst2                    ; out0             ;
-+-------------------------------------------+-------------------------------------------+------------------+
++-------------------------------------------------+
+; Complete 1/0-Value Coverage                     ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
-+--------------------------------------------------+
-; Missing 1-Value Coverage                         ;
-+------------+------------------+------------------+
-; Node Name  ; Output Port Name ; Output Port Type ;
-+------------+------------------+------------------+
-; |soma|O[6] ; |soma|O[6]       ; pin_out          ;
-+------------+------------------+------------------+
++--------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                           ;
++------------------------------------------------+------------------------------------------------+------------------+
+; Node Name                                      ; Output Port Name                               ; Output Port Type ;
++------------------------------------------------+------------------------------------------------+------------------+
+; |subtrador|O[5]                                ; |subtrador|O[5]                                ; pin_out          ;
+; |subtrador|O[4]                                ; |subtrador|O[4]                                ; pin_out          ;
+; |subtrador|O[3]                                ; |subtrador|O[3]                                ; pin_out          ;
+; |subtrador|O[2]                                ; |subtrador|O[2]                                ; pin_out          ;
+; |subtrador|O[1]                                ; |subtrador|O[1]                                ; pin_out          ;
+; |subtrador|O[0]                                ; |subtrador|O[0]                                ; pin_out          ;
+; |subtrador|B[4]                                ; |subtrador|B[4]                                ; out              ;
+; |subtrador|B[3]                                ; |subtrador|B[3]                                ; out              ;
+; |subtrador|B[2]                                ; |subtrador|B[2]                                ; out              ;
+; |subtrador|B[1]                                ; |subtrador|B[1]                                ; out              ;
+; |subtrador|B[0]                                ; |subtrador|B[0]                                ; out              ;
+; |subtrador|A[4]                                ; |subtrador|A[4]                                ; out              ;
+; |subtrador|A[3]                                ; |subtrador|A[3]                                ; out              ;
+; |subtrador|A[2]                                ; |subtrador|A[2]                                ; out              ;
+; |subtrador|A[1]                                ; |subtrador|A[1]                                ; out              ;
+; |subtrador|A[0]                                ; |subtrador|A[0]                                ; out              ;
+; |subtrador|C2:inst|inst4                       ; |subtrador|C2:inst|inst4                       ; out0             ;
+; |subtrador|C2:inst|inst12                      ; |subtrador|C2:inst|inst12                      ; out0             ;
+; |subtrador|C2:inst|inst6                       ; |subtrador|C2:inst|inst6                       ; out0             ;
+; |subtrador|C2:inst|inst11                      ; |subtrador|C2:inst|inst11                      ; out0             ;
+; |subtrador|C2:inst|inst5                       ; |subtrador|C2:inst|inst5                       ; out0             ;
+; |subtrador|C2:inst|inst10                      ; |subtrador|C2:inst|inst10                      ; out0             ;
+; |subtrador|C2:inst|inst1                       ; |subtrador|C2:inst|inst1                       ; out0             ;
+; |subtrador|C2:inst|inst9                       ; |subtrador|C2:inst|inst9                       ; out0             ;
+; |subtrador|C2:inst|inst                        ; |subtrador|C2:inst|inst                        ; out0             ;
+; |subtrador|C2:inst|inst7                       ; |subtrador|C2:inst|inst7                       ; out0             ;
+; |subtrador|C2:inst|inst8                       ; |subtrador|C2:inst|inst8                       ; out0             ;
+; |subtrador|C2:inst|inst3                       ; |subtrador|C2:inst|inst3                       ; out0             ;
+; |subtrador|C2:inst|inst2                       ; |subtrador|C2:inst|inst2                       ; out0             ;
+; |subtrador|C2:inst|inst14                      ; |subtrador|C2:inst|inst14                      ; out0             ;
+; |subtrador|C2:inst|inst15                      ; |subtrador|C2:inst|inst15                      ; out0             ;
+; |subtrador|C2_subtrador:inst1|inst4            ; |subtrador|C2_subtrador:inst1|inst4            ; out0             ;
+; |subtrador|C2_subtrador:inst1|inst12           ; |subtrador|C2_subtrador:inst1|inst12           ; out0             ;
+; |subtrador|C2_subtrador:inst1|inst6            ; |subtrador|C2_subtrador:inst1|inst6            ; out0             ;
+; |subtrador|C2_subtrador:inst1|inst11           ; |subtrador|C2_subtrador:inst1|inst11           ; out0             ;
+; |subtrador|C2_subtrador:inst1|inst5            ; |subtrador|C2_subtrador:inst1|inst5            ; out0             ;
+; |subtrador|C2_subtrador:inst1|inst10           ; |subtrador|C2_subtrador:inst1|inst10           ; out0             ;
+; |subtrador|C2_subtrador:inst1|inst1            ; |subtrador|C2_subtrador:inst1|inst1            ; out0             ;
+; |subtrador|C2_subtrador:inst1|inst9            ; |subtrador|C2_subtrador:inst1|inst9            ; out0             ;
+; |subtrador|C2_subtrador:inst1|inst             ; |subtrador|C2_subtrador:inst1|inst             ; out0             ;
+; |subtrador|C2_subtrador:inst1|inst7            ; |subtrador|C2_subtrador:inst1|inst7            ; out0             ;
+; |subtrador|C2_subtrador:inst1|inst8            ; |subtrador|C2_subtrador:inst1|inst8            ; out0             ;
+; |subtrador|C2_subtrador:inst1|inst3            ; |subtrador|C2_subtrador:inst1|inst3            ; out0             ;
+; |subtrador|C2_subtrador:inst1|inst2            ; |subtrador|C2_subtrador:inst1|inst2            ; out0             ;
+; |subtrador|C2_subtrador:inst1|inst14           ; |subtrador|C2_subtrador:inst1|inst14           ; out0             ;
+; |subtrador|C2_subtrador:inst1|inst15           ; |subtrador|C2_subtrador:inst1|inst15           ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst5|inst4 ; |subtrador|somador:inst2|fullAdder:inst5|inst4 ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst5|inst3 ; |subtrador|somador:inst2|fullAdder:inst5|inst3 ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst4|inst4 ; |subtrador|somador:inst2|fullAdder:inst4|inst4 ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst4|inst3 ; |subtrador|somador:inst2|fullAdder:inst4|inst3 ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst4|inst  ; |subtrador|somador:inst2|fullAdder:inst4|inst  ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst4|inst2 ; |subtrador|somador:inst2|fullAdder:inst4|inst2 ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst4|inst1 ; |subtrador|somador:inst2|fullAdder:inst4|inst1 ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst3|inst4 ; |subtrador|somador:inst2|fullAdder:inst3|inst4 ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst3|inst3 ; |subtrador|somador:inst2|fullAdder:inst3|inst3 ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst3|inst  ; |subtrador|somador:inst2|fullAdder:inst3|inst  ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst3|inst2 ; |subtrador|somador:inst2|fullAdder:inst3|inst2 ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst3|inst1 ; |subtrador|somador:inst2|fullAdder:inst3|inst1 ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst2|inst4 ; |subtrador|somador:inst2|fullAdder:inst2|inst4 ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst2|inst3 ; |subtrador|somador:inst2|fullAdder:inst2|inst3 ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst2|inst  ; |subtrador|somador:inst2|fullAdder:inst2|inst  ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst2|inst2 ; |subtrador|somador:inst2|fullAdder:inst2|inst2 ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst2|inst1 ; |subtrador|somador:inst2|fullAdder:inst2|inst1 ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst1|inst4 ; |subtrador|somador:inst2|fullAdder:inst1|inst4 ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst1|inst3 ; |subtrador|somador:inst2|fullAdder:inst1|inst3 ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst1|inst  ; |subtrador|somador:inst2|fullAdder:inst1|inst  ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst1|inst2 ; |subtrador|somador:inst2|fullAdder:inst1|inst2 ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst1|inst1 ; |subtrador|somador:inst2|fullAdder:inst1|inst1 ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst|inst3  ; |subtrador|somador:inst2|fullAdder:inst|inst3  ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst|inst1  ; |subtrador|somador:inst2|fullAdder:inst|inst1  ; out0             ;
+; |subtrador|C2_5:inst4|inst4                    ; |subtrador|C2_5:inst4|inst4                    ; out0             ;
+; |subtrador|C2_5:inst4|inst12                   ; |subtrador|C2_5:inst4|inst12                   ; out0             ;
+; |subtrador|C2_5:inst4|inst6                    ; |subtrador|C2_5:inst4|inst6                    ; out0             ;
+; |subtrador|C2_5:inst4|inst11                   ; |subtrador|C2_5:inst4|inst11                   ; out0             ;
+; |subtrador|C2_5:inst4|inst5                    ; |subtrador|C2_5:inst4|inst5                    ; out0             ;
+; |subtrador|C2_5:inst4|inst10                   ; |subtrador|C2_5:inst4|inst10                   ; out0             ;
+; |subtrador|C2_5:inst4|inst1                    ; |subtrador|C2_5:inst4|inst1                    ; out0             ;
+; |subtrador|C2_5:inst4|inst9                    ; |subtrador|C2_5:inst4|inst9                    ; out0             ;
+; |subtrador|C2_5:inst4|inst                     ; |subtrador|C2_5:inst4|inst                     ; out0             ;
+; |subtrador|C2_5:inst4|inst13                   ; |subtrador|C2_5:inst4|inst13                   ; out0             ;
+; |subtrador|C2_5:inst4|inst7                    ; |subtrador|C2_5:inst4|inst7                    ; out0             ;
+; |subtrador|C2_5:inst4|inst8                    ; |subtrador|C2_5:inst4|inst8                    ; out0             ;
+; |subtrador|C2_5:inst4|inst3                    ; |subtrador|C2_5:inst4|inst3                    ; out0             ;
+; |subtrador|C2_5:inst4|inst2                    ; |subtrador|C2_5:inst4|inst2                    ; out0             ;
++------------------------------------------------+------------------------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 0 during simulation.
-+--------------------------------------------------+
-; Missing 0-Value Coverage                         ;
-+------------+------------------+------------------+
-; Node Name  ; Output Port Name ; Output Port Type ;
-+------------+------------------+------------------+
-; |soma|O[6] ; |soma|O[6]       ; pin_out          ;
-+------------+------------------+------------------+
++--------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                           ;
++------------------------------------------------+------------------------------------------------+------------------+
+; Node Name                                      ; Output Port Name                               ; Output Port Type ;
++------------------------------------------------+------------------------------------------------+------------------+
+; |subtrador|O[5]                                ; |subtrador|O[5]                                ; pin_out          ;
+; |subtrador|O[4]                                ; |subtrador|O[4]                                ; pin_out          ;
+; |subtrador|O[3]                                ; |subtrador|O[3]                                ; pin_out          ;
+; |subtrador|O[2]                                ; |subtrador|O[2]                                ; pin_out          ;
+; |subtrador|O[1]                                ; |subtrador|O[1]                                ; pin_out          ;
+; |subtrador|O[0]                                ; |subtrador|O[0]                                ; pin_out          ;
+; |subtrador|B[4]                                ; |subtrador|B[4]                                ; out              ;
+; |subtrador|B[3]                                ; |subtrador|B[3]                                ; out              ;
+; |subtrador|B[2]                                ; |subtrador|B[2]                                ; out              ;
+; |subtrador|B[1]                                ; |subtrador|B[1]                                ; out              ;
+; |subtrador|B[0]                                ; |subtrador|B[0]                                ; out              ;
+; |subtrador|A[4]                                ; |subtrador|A[4]                                ; out              ;
+; |subtrador|A[3]                                ; |subtrador|A[3]                                ; out              ;
+; |subtrador|A[2]                                ; |subtrador|A[2]                                ; out              ;
+; |subtrador|A[1]                                ; |subtrador|A[1]                                ; out              ;
+; |subtrador|A[0]                                ; |subtrador|A[0]                                ; out              ;
+; |subtrador|C2:inst|inst4                       ; |subtrador|C2:inst|inst4                       ; out0             ;
+; |subtrador|C2:inst|inst12                      ; |subtrador|C2:inst|inst12                      ; out0             ;
+; |subtrador|C2:inst|inst6                       ; |subtrador|C2:inst|inst6                       ; out0             ;
+; |subtrador|C2:inst|inst11                      ; |subtrador|C2:inst|inst11                      ; out0             ;
+; |subtrador|C2:inst|inst5                       ; |subtrador|C2:inst|inst5                       ; out0             ;
+; |subtrador|C2:inst|inst10                      ; |subtrador|C2:inst|inst10                      ; out0             ;
+; |subtrador|C2:inst|inst1                       ; |subtrador|C2:inst|inst1                       ; out0             ;
+; |subtrador|C2:inst|inst9                       ; |subtrador|C2:inst|inst9                       ; out0             ;
+; |subtrador|C2:inst|inst                        ; |subtrador|C2:inst|inst                        ; out0             ;
+; |subtrador|C2:inst|inst7                       ; |subtrador|C2:inst|inst7                       ; out0             ;
+; |subtrador|C2:inst|inst8                       ; |subtrador|C2:inst|inst8                       ; out0             ;
+; |subtrador|C2:inst|inst3                       ; |subtrador|C2:inst|inst3                       ; out0             ;
+; |subtrador|C2:inst|inst2                       ; |subtrador|C2:inst|inst2                       ; out0             ;
+; |subtrador|C2:inst|inst14                      ; |subtrador|C2:inst|inst14                      ; out0             ;
+; |subtrador|C2:inst|inst15                      ; |subtrador|C2:inst|inst15                      ; out0             ;
+; |subtrador|C2_subtrador:inst1|inst4            ; |subtrador|C2_subtrador:inst1|inst4            ; out0             ;
+; |subtrador|C2_subtrador:inst1|inst12           ; |subtrador|C2_subtrador:inst1|inst12           ; out0             ;
+; |subtrador|C2_subtrador:inst1|inst6            ; |subtrador|C2_subtrador:inst1|inst6            ; out0             ;
+; |subtrador|C2_subtrador:inst1|inst11           ; |subtrador|C2_subtrador:inst1|inst11           ; out0             ;
+; |subtrador|C2_subtrador:inst1|inst5            ; |subtrador|C2_subtrador:inst1|inst5            ; out0             ;
+; |subtrador|C2_subtrador:inst1|inst10           ; |subtrador|C2_subtrador:inst1|inst10           ; out0             ;
+; |subtrador|C2_subtrador:inst1|inst1            ; |subtrador|C2_subtrador:inst1|inst1            ; out0             ;
+; |subtrador|C2_subtrador:inst1|inst9            ; |subtrador|C2_subtrador:inst1|inst9            ; out0             ;
+; |subtrador|C2_subtrador:inst1|inst             ; |subtrador|C2_subtrador:inst1|inst             ; out0             ;
+; |subtrador|C2_subtrador:inst1|inst7            ; |subtrador|C2_subtrador:inst1|inst7            ; out0             ;
+; |subtrador|C2_subtrador:inst1|inst8            ; |subtrador|C2_subtrador:inst1|inst8            ; out0             ;
+; |subtrador|C2_subtrador:inst1|inst3            ; |subtrador|C2_subtrador:inst1|inst3            ; out0             ;
+; |subtrador|C2_subtrador:inst1|inst2            ; |subtrador|C2_subtrador:inst1|inst2            ; out0             ;
+; |subtrador|C2_subtrador:inst1|inst14           ; |subtrador|C2_subtrador:inst1|inst14           ; out0             ;
+; |subtrador|C2_subtrador:inst1|inst15           ; |subtrador|C2_subtrador:inst1|inst15           ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst5|inst4 ; |subtrador|somador:inst2|fullAdder:inst5|inst4 ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst5|inst3 ; |subtrador|somador:inst2|fullAdder:inst5|inst3 ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst4|inst4 ; |subtrador|somador:inst2|fullAdder:inst4|inst4 ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst4|inst3 ; |subtrador|somador:inst2|fullAdder:inst4|inst3 ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst4|inst  ; |subtrador|somador:inst2|fullAdder:inst4|inst  ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst4|inst2 ; |subtrador|somador:inst2|fullAdder:inst4|inst2 ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst4|inst1 ; |subtrador|somador:inst2|fullAdder:inst4|inst1 ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst3|inst4 ; |subtrador|somador:inst2|fullAdder:inst3|inst4 ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst3|inst3 ; |subtrador|somador:inst2|fullAdder:inst3|inst3 ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst3|inst  ; |subtrador|somador:inst2|fullAdder:inst3|inst  ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst3|inst2 ; |subtrador|somador:inst2|fullAdder:inst3|inst2 ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst3|inst1 ; |subtrador|somador:inst2|fullAdder:inst3|inst1 ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst2|inst4 ; |subtrador|somador:inst2|fullAdder:inst2|inst4 ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst2|inst3 ; |subtrador|somador:inst2|fullAdder:inst2|inst3 ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst2|inst  ; |subtrador|somador:inst2|fullAdder:inst2|inst  ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst2|inst2 ; |subtrador|somador:inst2|fullAdder:inst2|inst2 ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst2|inst1 ; |subtrador|somador:inst2|fullAdder:inst2|inst1 ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst1|inst4 ; |subtrador|somador:inst2|fullAdder:inst1|inst4 ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst1|inst3 ; |subtrador|somador:inst2|fullAdder:inst1|inst3 ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst1|inst  ; |subtrador|somador:inst2|fullAdder:inst1|inst  ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst1|inst2 ; |subtrador|somador:inst2|fullAdder:inst1|inst2 ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst1|inst1 ; |subtrador|somador:inst2|fullAdder:inst1|inst1 ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst|inst3  ; |subtrador|somador:inst2|fullAdder:inst|inst3  ; out0             ;
+; |subtrador|somador:inst2|fullAdder:inst|inst1  ; |subtrador|somador:inst2|fullAdder:inst|inst1  ; out0             ;
+; |subtrador|C2_5:inst4|inst4                    ; |subtrador|C2_5:inst4|inst4                    ; out0             ;
+; |subtrador|C2_5:inst4|inst12                   ; |subtrador|C2_5:inst4|inst12                   ; out0             ;
+; |subtrador|C2_5:inst4|inst6                    ; |subtrador|C2_5:inst4|inst6                    ; out0             ;
+; |subtrador|C2_5:inst4|inst11                   ; |subtrador|C2_5:inst4|inst11                   ; out0             ;
+; |subtrador|C2_5:inst4|inst5                    ; |subtrador|C2_5:inst4|inst5                    ; out0             ;
+; |subtrador|C2_5:inst4|inst10                   ; |subtrador|C2_5:inst4|inst10                   ; out0             ;
+; |subtrador|C2_5:inst4|inst1                    ; |subtrador|C2_5:inst4|inst1                    ; out0             ;
+; |subtrador|C2_5:inst4|inst9                    ; |subtrador|C2_5:inst4|inst9                    ; out0             ;
+; |subtrador|C2_5:inst4|inst                     ; |subtrador|C2_5:inst4|inst                     ; out0             ;
+; |subtrador|C2_5:inst4|inst13                   ; |subtrador|C2_5:inst4|inst13                   ; out0             ;
+; |subtrador|C2_5:inst4|inst7                    ; |subtrador|C2_5:inst4|inst7                    ; out0             ;
+; |subtrador|C2_5:inst4|inst8                    ; |subtrador|C2_5:inst4|inst8                    ; out0             ;
+; |subtrador|C2_5:inst4|inst3                    ; |subtrador|C2_5:inst4|inst3                    ; out0             ;
+; |subtrador|C2_5:inst4|inst2                    ; |subtrador|C2_5:inst4|inst2                    ; out0             ;
++------------------------------------------------+------------------------------------------------+------------------+
 
 
 +---------------------+
@@ -230,20 +311,20 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Tue Mar 29 13:41:24 2022
+    Info: Processing started: Tue Mar 29 14:37:58 2022
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off ULA -c AMaiorQueB
-Info: Using vector source file "C:/Users/Thiago/Desktop/Projeto SD/wave.vwf"
+Info: Using vector source file "C:/Users/Thiago/Desktop/Projeto SD/funcionaSub.vwf"
 Info: Overwriting simulation input file with simulation results
-    Info: A backup of wave.vwf called AMaiorQueB.sim_ori.vwf has been created in the db folder
+    Info: A backup of funcionaSub.vwf called AMaiorQueB.sim_ori.vwf has been created in the db folder
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
-Info: Simulation coverage is      98.82 %
-Info: Number of transitions in simulation is 17275
-Info: Vector file wave.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Simulation coverage is       0.00 %
+Info: Number of transitions in simulation is 0
+Info: Vector file funcionaSub.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
 Info: Quartus II Simulator was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 142 megabytes
-    Info: Processing ended: Tue Mar 29 13:41:24 2022
+    Info: Processing ended: Tue Mar 29 14:37:58 2022
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 

@@ -1,16 +1,15 @@
-|soma
-O[0] <= C2_5:inst2.O[0]
-O[1] <= C2_5:inst2.O[1]
-O[2] <= C2_5:inst2.O[2]
-O[3] <= C2_5:inst2.O[3]
-O[4] <= C2_5:inst2.O[4]
-O[5] <= C2_5:inst2.O[5]
-O[6] <= <GND>
-B[0] => C2:inst1.A[0]
-B[1] => C2:inst1.A[1]
-B[2] => C2:inst1.A[2]
-B[3] => C2:inst1.A[3]
-B[4] => C2:inst1.A[4]
+|subtrador
+O[0] <= C2_5:inst4.O[0]
+O[1] <= C2_5:inst4.O[1]
+O[2] <= C2_5:inst4.O[2]
+O[3] <= C2_5:inst4.O[3]
+O[4] <= C2_5:inst4.O[4]
+O[5] <= C2_5:inst4.O[5]
+B[0] => C2_subtrador:inst1.A[0]
+B[1] => C2_subtrador:inst1.A[1]
+B[2] => C2_subtrador:inst1.A[2]
+B[3] => C2_subtrador:inst1.A[3]
+B[4] => C2_subtrador:inst1.A[4]
 A[0] => C2:inst.A[0]
 A[1] => C2:inst.A[1]
 A[2] => C2:inst.A[2]
@@ -18,7 +17,7 @@ A[3] => C2:inst.A[3]
 A[4] => C2:inst.A[4]
 
 
-|soma|C2_5:inst2
+|subtrador|C2_5:inst4
 O[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst8.DB_MAX_OUTPUT_PORT_TYPE
@@ -40,7 +39,7 @@ A[5] => inst2.IN0
 A[5] => O[5].DATAIN
 
 
-|soma|somador:inst5
+|subtrador|somador:inst2
 S[0] <= fullAdder:inst.S
 S[1] <= fullAdder:inst1.S
 S[2] <= fullAdder:inst2.S
@@ -61,7 +60,7 @@ B[4] => fullAdder:inst4.B
 B[5] => fullAdder:inst5.B
 
 
-|soma|somador:inst5|fullAdder:inst
+|subtrador|somador:inst2|fullAdder:inst
 S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 A => inst3.IN0
 A => inst1.IN0
@@ -72,7 +71,7 @@ Cin => inst2.IN1
 Cout <= inst.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|soma|somador:inst5|fullAdder:inst1
+|subtrador|somador:inst2|fullAdder:inst1
 S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 A => inst3.IN0
 A => inst1.IN0
@@ -83,7 +82,7 @@ Cin => inst2.IN1
 Cout <= inst.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|soma|somador:inst5|fullAdder:inst2
+|subtrador|somador:inst2|fullAdder:inst2
 S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 A => inst3.IN0
 A => inst1.IN0
@@ -94,7 +93,7 @@ Cin => inst2.IN1
 Cout <= inst.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|soma|somador:inst5|fullAdder:inst3
+|subtrador|somador:inst2|fullAdder:inst3
 S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 A => inst3.IN0
 A => inst1.IN0
@@ -105,7 +104,7 @@ Cin => inst2.IN1
 Cout <= inst.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|soma|somador:inst5|fullAdder:inst4
+|subtrador|somador:inst2|fullAdder:inst4
 S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 A => inst3.IN0
 A => inst1.IN0
@@ -116,7 +115,7 @@ Cin => inst2.IN1
 Cout <= inst.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|soma|somador:inst5|fullAdder:inst5
+|subtrador|somador:inst2|fullAdder:inst5
 S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 A => inst3.IN0
 A => inst1.IN0
@@ -127,7 +126,7 @@ Cin => inst2.IN1
 Cout <= inst.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|soma|C2:inst1
+|subtrador|C2_subtrador:inst1
 O[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst8.DB_MAX_OUTPUT_PORT_TYPE
@@ -138,18 +137,10 @@ A[0] => inst.IN0
 A[1] => inst1.IN0
 A[2] => inst5.IN0
 A[3] => inst6.IN0
-A[4] => inst6.IN1
-A[4] => inst5.IN1
-A[4] => inst1.IN1
-A[4] => inst.IN1
-A[4] => inst9.IN1
-A[4] => inst4.IN1
-A[4] => inst2.IN0
-A[4] => inst15.IN1
-A[4] => inst13.IN0
+A[4] => inst17.IN0
 
 
-|soma|C2:inst
+|subtrador|C2:inst
 O[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst8.DB_MAX_OUTPUT_PORT_TYPE

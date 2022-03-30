@@ -70,12 +70,12 @@ Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage 
 ~ASDO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : 1         : input  : 2.5 V             :         : 1         : N              
 ~nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : 2         : input  : 2.5 V             :         : 1         : N              
 GND*                         : 3         :        :                   :         : 1         :                
-GND*                         : 4         :        :                   :         : 1         :                
+O[0]                         : 4         : output : 2.5 V             :         : 1         : N              
 VCCIO1                       : 5         : power  :                   : 2.5V    : 1         :                
 GND                          : 6         : gnd    :                   :         :           :                
-GND*                         : 7         :        :                   :         : 1         :                
+O[1]                         : 7         : output : 2.5 V             :         : 1         : N              
 GND*                         : 8         :        :                   :         : 1         :                
-GND*                         : 9         :        :                   :         : 1         :                
+O[2]                         : 9         : output : 2.5 V             :         : 1         : N              
 TDO                          : 10        : output :                   :         : 1         :                
 TMS                          : 11        : input  :                   :         : 1         :                
 TCK                          : 12        : input  :                   :         : 1         :                
@@ -90,14 +90,14 @@ nCONFIG                      : 20        :        :                   :         
 GND+                         : 21        :        :                   :         : 1         :                
 GND+                         : 22        :        :                   :         : 1         :                
 VCCIO1                       : 23        : power  :                   : 2.5V    : 1         :                
-O[3]                         : 24        : output : 2.5 V             :         : 1         : N              
-O[4]                         : 25        : output : 2.5 V             :         : 1         : N              
+GND*                         : 24        :        :                   :         : 1         :                
+GND*                         : 25        :        :                   :         : 1         :                
 GND*                         : 26        :        :                   :         : 1         :                
-GND*                         : 27        :        :                   :         : 1         :                
-O[0]                         : 28        : output : 2.5 V             :         : 1         : N              
+O[3]                         : 27        : output : 2.5 V             :         : 1         : N              
+GND*                         : 28        :        :                   :         : 1         :                
 VCCIO1                       : 29        : power  :                   : 2.5V    : 1         :                
 GND*                         : 30        :        :                   :         : 1         :                
-O[1]                         : 31        : output : 2.5 V             :         : 1         : N              
+GND*                         : 31        :        :                   :         : 1         :                
 GND*                         : 32        :        :                   :         : 1         :                
 GND                          : 33        : gnd    :                   :         :           :                
 GND_PLL1                     : 34        : gnd    :                   :         :           :                
@@ -113,7 +113,7 @@ GND*                         : 43        :        :                   :         
 GND*                         : 44        :        :                   :         : 4         :                
 GND*                         : 45        :        :                   :         : 4         :                
 VCCIO4                       : 46        : power  :                   : 2.5V    : 4         :                
-O[6]                         : 47        : output : 2.5 V             :         : 4         : N              
+GND*                         : 47        :        :                   :         : 4         :                
 GND*                         : 48        :        :                   :         : 4         :                
 GND                          : 49        : gnd    :                   :         :           :                
 VCCINT                       : 50        : power  :                   : 1.2V    :           :                
@@ -121,48 +121,48 @@ GND*                         : 51        :        :                   :         
 GND*                         : 52        :        :                   :         : 4         :                
 GND*                         : 53        :        :                   :         : 4         :                
 VCCIO4                       : 54        : power  :                   : 2.5V    : 4         :                
-GND*                         : 55        :        :                   :         : 4         :                
+O[5]                         : 55        : output : 2.5 V             :         : 4         : N              
 GND                          : 56        : gnd    :                   :         :           :                
 GND*                         : 57        :        :                   :         : 4         :                
 GND*                         : 58        :        :                   :         : 4         :                
 GND*                         : 59        :        :                   :         : 4         :                
-GND*                         : 60        :        :                   :         : 4         :                
+B[4]                         : 60        : input  : 2.5 V             :         : 4         : N              
 GND                          : 61        : gnd    :                   :         :           :                
 VCCINT                       : 62        : power  :                   : 1.2V    :           :                
 GND*                         : 63        :        :                   :         : 4         :                
 GND*                         : 64        :        :                   :         : 4         :                
-O[5]                         : 65        : output : 2.5 V             :         : 4         : N              
+GND*                         : 65        :        :                   :         : 4         :                
 VCCIO4                       : 66        : power  :                   : 2.5V    : 4         :                
 GND*                         : 67        :        :                   :         : 4         :                
 GND                          : 68        : gnd    :                   :         :           :                
 GND*                         : 69        :        :                   :         : 4         :                
 GND*                         : 70        :        :                   :         : 4         :                
 GND*                         : 71        :        :                   :         : 4         :                
-A[4]                         : 72        : input  : 2.5 V             :         : 4         : N              
-B[0]                         : 73        : input  : 2.5 V             :         : 3         : N              
-A[2]                         : 74        : input  : 2.5 V             :         : 3         : N              
-A[3]                         : 75        : input  : 2.5 V             :         : 3         : N              
+O[4]                         : 72        : output : 2.5 V             :         : 4         : N              
+GND*                         : 73        :        :                   :         : 3         :                
+GND*                         : 74        :        :                   :         : 3         :                
+GND*                         : 75        :        :                   :         : 3         :                
 ~LVDS41p/nCEO~               : 76        : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : 77        : power  :                   : 2.5V    : 3         :                
 GND                          : 78        : gnd    :                   :         :           :                
-B[4]                         : 79        : input  : 2.5 V             :         : 3         : N              
-A[0]                         : 80        : input  : 2.5 V             :         : 3         : N              
+A[2]                         : 79        : input  : 2.5 V             :         : 3         : N              
+GND*                         : 80        :        :                   :         : 3         :                
 A[1]                         : 81        : input  : 2.5 V             :         : 3         : N              
 nSTATUS                      : 82        :        :                   :         : 3         :                
 CONF_DONE                    : 83        :        :                   :         : 3         :                
 MSEL1                        : 84        :        :                   :         : 3         :                
 MSEL0                        : 85        :        :                   :         : 3         :                
-GND*                         : 86        :        :                   :         : 3         :                
-GND*                         : 87        :        :                   :         : 3         :                
+A[4]                         : 86        : input  : 2.5 V             :         : 3         : N              
+B[0]                         : 87        : input  : 2.5 V             :         : 3         : N              
 B[1]                         : 88        : input  : 2.5 V             :         : 3         : N              
 B[2]                         : 89        : input  : 2.5 V             :         : 3         : N              
 B[3]                         : 90        : input  : 2.5 V             :         : 3         : N              
 GND+                         : 91        :        :                   :         : 3         :                
-GND*                         : 92        :        :                   :         : 3         :                
+A[3]                         : 92        : input  : 2.5 V             :         : 3         : N              
 GND*                         : 93        :        :                   :         : 3         :                
 GND*                         : 94        :        :                   :         : 3         :                
 VCCIO3                       : 95        : power  :                   : 2.5V    : 3         :                
-GND*                         : 96        :        :                   :         : 3         :                
+A[0]                         : 96        : input  : 2.5 V             :         : 3         : N              
 GND*                         : 97        :        :                   :         : 3         :                
 GND                          : 98        : gnd    :                   :         :           :                
 GND*                         : 99        :        :                   :         : 3         :                
@@ -200,7 +200,7 @@ GND                          : 130       : gnd    :                   :         
 VCCINT                       : 131       : power  :                   : 1.2V    :           :                
 GND*                         : 132       :        :                   :         : 2         :                
 GND*                         : 133       :        :                   :         : 2         :                
-O[2]                         : 134       : output : 2.5 V             :         : 2         : N              
+GND*                         : 134       :        :                   :         : 2         :                
 GND*                         : 135       :        :                   :         : 2         :                
 GND*                         : 136       :        :                   :         : 2         :                
 GND*                         : 137       :        :                   :         : 2         :                
